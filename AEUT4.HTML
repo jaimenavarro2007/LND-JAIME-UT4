@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Venta de Entradas para el siguiente partido</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+        body {
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        #title {
+        background-color: #1c5883;
+        color: #000000;
+        }
+
+        .container-fluid {
+        padding: 3% 15%;
+        }
+
+        h1 {
+        font-weight: 900;
+        font-size: 3.5rem;
+        line-height: 1.5;
+        }
+
+        .brand-name {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2.5rem;
+        }
+
+        .nav-link {
+        font-size: 1.2rem;
+        padding: 0 18px;
+        }
+
+        .btn-margin-custom {
+        margin: 5% 3% 5% 0;
+        }
+
+        .app-image {
+
+        width: 60%;
+        }
+
+        #features {
+        padding: 7% 15%;
+        background-color:rgb(0, 66, 136);
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        }
+
+        #testimonials {
+        padding: 7% 15%;
+        text-align: center;
+        background-color:  rgba(253, 229, 15);
+        color:rgb(0, 66, 136);
+        }
+
+        .testimonial-text {
+        font-size: 3rem;
+        line-height: 1.5;
+        font-weight: 700;
+        }
+
+        .testimonial-image {
+        width: 10%;
+        border-radius: 100%; 
+        margin: 20px;
+        }
+
+        #press {
+        background-color: #8f7a77;
+        padding-bottom: 3%;
+        text-align: center;
+        }
+
+        .press-logo {
+            width: 15%;
+            margin: 20px 20px 50px;
+        }
+
+        .feature-box {
+        padding: 4.5%;
+        }
+
+        .feature-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        }
+
+        .feature-desc {
+        color: rgb(0, 0, 0);
+        line-height: 1.5;
+        }
+
+        .icon {
+        color: rgba(253, 229, 15);
+        transition: color 0.3s;
+        }
+
+        .fa-heart:hover {
+  
+        cursor: pointer;
+        }
+
+        .carousel-item{
+        background-color: #dfa8a1;            
+        }
+
+        #pricing{
+          text-align: center;
+        }
+
+        #footer{
+            text-align: center;
+            color: #fff;
+        background-color: #ef8172;
+          
+        }
+
+        .footer-icon{
+            color: #9c5555;
+        }
+
+        .footer-link{
+            color: #783838;
+        }
+
+        #fa-brands {
+            padding: 20px;
+        }
+
+  </style>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><span class="brand-name">MiApp</span></a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Características</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Descargar</a></li>
+        </ul>
+      </nav>
+
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1>Mi web.</h1>
+          <button type="button" class="btn btn-dark btn-lg btn-margin-custom">
+            <i class="fa-brands fa-apple"></i> Descargar
+          </button>
+          <button type="button" class="btn btn-outline-light btn-lg btn-margin-custom">
+            <i class="fa-brands fa-google-play"></i> Descargar
+          </button>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="udlaspalmas.png" alt="Vista de la aplicación" class="img-fluid app-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <a href="https://www.grancanaria.com/turismo/"><i class="fa-solid fa-umbrella-beach fa-4x" style="color: rgba(253, 229, 15)"></i></a>
+        <h3 class="feature-title">Turismo Gran Canaria</h3>
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <a href="https://www.udlaspalmas.es/tour"><i class="fa-solid fa-route fa-4x" style="color: rgba(253, 229, 15)"></i></a>
+        <h3 class="feature-title">TOUR UD Las Palmas</h3>
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <a href="https://www.udlaspalmas.es/inscripciones-escuela"><i class="fa-solid fa-futbol fa-4x" style="color:rgba(253, 229, 15)"></i></a>
+        <h3 class="feature-title">Campus de verano 2026</h3>
+        <p class="feature-desc"></p>
+      </div>
+    </div>
+   </section>
+    <section id="testimonials">
+        <h1>Frases celebres</h1>
+        <h2 class="testimonial-text"> "Nunca tu sola caminarás"</h2>
+
+
+    </section>
+
+        
+   
+     <section id="testimonials">
+        <h2 class="testimonial-text">"Aquí se viene a jugar, se puede ganar, pero lo seguro es que se viene a sufrir"</h2>
+    </section>
+    <section id="testimonials">
+        <h2 class="testimonial-text">"Arriba d'ellos"</h2>
+    </section>
+    
+  </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="TechCrunch.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="tnw.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="udlaspalmas.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+<section id="pricing">
+    <h2 class="section-heading">Venta de entradas</h2>
+    <p>Escoja la que se ajuste a sus necesidades</p>
+
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Económico</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">Curva</h2>
+            <p>10€</p>
+            <p></p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">La quiero</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Intermedio</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text"> Tribuna</h2>
+            <p>20€</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">La quiero</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Premium</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">Grada VIP</h2>
+            <p>30€</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">La quiero</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <a href="#" class="footer-icon"><i class="fa-brands fa-twitter fa-xl"></i></a>
+      <a href="#" class="footer-icon"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+      <a href="#" class="footer-icon"><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="mailto:contacto@miapp.com" class="footer-icon"><i class="fa-solid fa-envelope fa-xl"></i></a>
+      
+      <p>© Copyright 2026 MiAPP</p>
+      <p>Made by <a href="https://github.com/jaimenavarro2007/LND-webbootstrap--JaimeNavarro-.git" class="footer-link">Jaime Navarro</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
