@@ -1,0 +1,10 @@
+<!ELEMENT Lista (nombre, imagen, tarea+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+
+<!ELEMENT tarea (titulo, descripcion, fecha_vencimiento?)>
+<!ATTLIST tarea id ID #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha_vencimiento (#PCDATA)>
