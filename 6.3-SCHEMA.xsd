@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+/*DTD1*/
+<xs:element name="TVSCHEDULE">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="CHANNEL" type="xs:string"/>
+      <xs:complexType>
+            <xs:simpleContent>
+               <xs:extension base="xs:string">
+                    <xs:attribute name="tipo" use="required">
+                       <xs:simpleType>
+                           <xs:restriction base="xs:string">
+                                <xs:enumeration value="Reality"/>
+                                <xs:enumeration value="Deportes"/>
+                                <xs:enumeration value="Alimentacion"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                     </xs:attribute>
+                 </xs:extension>
+             </xs:simpleContent>
+        </xs:complexType>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="CHANNEL">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="BANNER" type="xs:string"/>
+      <xs:element name="DAY" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="DAY">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="DATE" type="xs:date"/>
+      <xs:element name="HOLIDAY" type="xs:date"/>
+      <xs:element name="PROGRAMSLOT" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="PROGRAMSLOT">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="TIME" type="xs:string"/>
+      <xs:element name="TITLE" type="xs:integer"/>
+      <xs:element name="DESCRIPTION" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

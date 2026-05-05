@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BDcomponentes [
+    <!ELEMENT BDcomponentes (componente)+>
+    <!ELEMENT componente (nombre, (precio|precioigic), tipo+, peso)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT precioigic (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT peso (#PCDATA)>
+]>
+
+<BDcomponentes>
+        <componente>
+            <nombre>Tarjeta grafica NVIDIA GeForce: RTX serie 50</nombre>
+            <precio>100</precio>
+            <tipo>software</tipo>
+            <peso>1KG</peso>            
+        </componente>
+
+        <componente>
+            <nombre>Procesador Ryzen 5</nombre>
+            <precioigic>280</precioigic>
+            <tipo>CPU</tipo>
+            <peso>0.5KG</peso>            
+        </componente>
+</BDcomponentes>
